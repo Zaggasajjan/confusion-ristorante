@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DishDetailsComponent } from '../dish-details/dish-details.component';
 import { Dish } from '../shared/dish';
 
 const DISHES: Dish[]= [
