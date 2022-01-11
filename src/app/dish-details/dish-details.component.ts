@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
 import { Dish } from '../shared/dish';
-import { DISHES } from '../shared/dishes';
 import { DishService } from '../services/dish.service';
 
 import { Params, ActivatedRoute } from '@angular/router';
@@ -22,9 +20,10 @@ export class DishDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     const id = +this.route.snapshot.params['id'];
-    this.dishservice.getDish('id').then((dish)=> this.dish=dish);
+    this.dishservice.getDish(id)
+    .then((dish)=> this.dish=dish);
   }
 
   goBack(): void {

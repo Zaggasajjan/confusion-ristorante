@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
 
   feedbackForm : FormGroup;
   feedback : Feedback;
-  contactType = ContactType;
+  contactType= ContactType;
 
   constructor(private fb: FormBuilder) { 
     this.CreateForm();
@@ -42,7 +42,7 @@ export class ContactComponent implements OnInit {
       telnum: '',
       email: '',
       agree: false,
-      contacttype: 'None',
+      contactType: 'None',
       message: ''
     });
     this.feedbackFormDirective.resetForm();
