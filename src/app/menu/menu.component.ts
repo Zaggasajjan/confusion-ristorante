@@ -20,6 +20,4 @@ export class MenuComponent implements OnInit {
     .subscribe((dishes) => this.dishes = dishes);
       
 }
-
- 
 }

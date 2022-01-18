@@ -34,6 +34,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 import { LoginComponent } from "./login/login.component";
+import {ProcessHTTPMsgService} from "./services/process-httpmsg.service";
 
 
 
@@ -74,6 +75,7 @@ import { LoginComponent } from "./login/login.component";
     DishService,
     PromotionService,
     LeaderService,
+    ProcessHTTPMsgService,
     {provide: 'baseURL', useValue: baseURL}
   ],
 
